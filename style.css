@@ -1,0 +1,297 @@
+/* MOBILE FIRST */
+
+* {
+    padding: auto;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #F8FAFC;
+}
+
+main {
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 41px;
+}
+
+.container {
+    padding: 24px;
+}
+
+.essentials,
+.enterprise {
+    display: flex;
+    /* max-width: 320px; */
+    height: 282px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+}
+
+.enterprise {
+    padding-bottom: 20px;
+    width: 360px;
+    /* height: 350px; */
+}
+
+.essentials .container .text-beggin,
+.enterprise .container .text-beggin,
+.ultimate .container .text-beggin {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #7C3AED;
+}
+
+.text-essentials,
+.text-enterprise {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    text-align: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.text-essentials h3,
+.text-enterprise h3 {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #1E293B;
+}
+
+.text-essentials span,
+.text-enterprise span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1E293B;
+}
+
+.btn-sign {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.enterprise .container .talk-with-us {
+    padding: 25px 0;
+}
+
+.btn-sign button {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1E293B;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    gap: 10px;
+    width: 310px;
+    height: 56px;
+    border: 1px solid #1E293B;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-sign button:hover{
+    background: #1E293B;
+    color: #FFFFFF;
+}
+
+.count-help ul {
+    margin-top: 16px;
+    display: grid;
+    gap: 16px;
+    padding: 0;
+}
+
+.count-help ul li {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #475569;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count-help ul li::marker {
+    font-size: 0;
+}
+
+.count-help ul li span {
+    display: flex;
+    gap: 10px;
+}
+
+.count-help ul li span::before{
+    content: "";
+    background: url(/src/images/icon-done.svg) no-repeat center;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: auto;
+}
+
+/* .count-help ul li::after{
+    content: "";
+    background: url(/src/images/check-icon.svg) no-repeat center;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+} */
+
+.count-help ul li img {
+    margin-right: 5px;
+}
+
+.count-help p {
+    margin-top: 35px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #475569;
+}
+
+.ultimate {
+    background: #0F172A;
+    border-radius: 10px;
+}
+
+.ultimate::before {
+    content: "MAIS VANTAJOSO";
+    background: #FBA94C;
+    border-radius: 6px;
+    width: 160px;
+    height: 35px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.06em;
+    color: #0F172A;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -16px;
+}
+
+.ultimate .container {
+    padding: 10px 24px 24px !important;
+}
+
+.text-ultimate {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    text-align: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.text-ultimate h3 {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #F8FAFC;
+}
+
+.text-ultimate span {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F8FAFC;
+}
+
+.ultimate .count-help ul li {
+    color: #F8FAFC;
+}
+
+.ultimate .container .btn-sign button {
+    background: #996DFF;
+    color: #F8FAFC;
+}
+
+.ultimate .container .btn-sign button:hover{
+    background: #7C3AED;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container {
+        padding: 48px 32px !important;
+    }
+
+    .ultimate .container {
+        padding-bottom: 0 !important;
+    }
+
+    .essentials,
+    .ultimate,
+    .enterprise {
+        width: 384px;
+        height: 454px;
+    }
+
+    .text-essentials span {
+        display: inline-flex;
+    }
+
+    .enterprise {
+        padding-bottom: 0;
+    }
+
+    .btn-sign {
+        padding: 32px 0 !important;
+    }
+
+    .btn-sign button {
+        width: 320px;
+        height: 56px;
+    }
+
+    .ultimate .count-help ul {
+        margin-top: 30px;
+    }
+}
