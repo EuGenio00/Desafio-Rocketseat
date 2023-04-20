@@ -6,12 +6,12 @@
 }
 
 body {
-    width: 100%;
+    /* width: 100%; */
     background-color: #F8FAFC;
 }
 
 main {
-    width: 100%;
+    /* width: 100%; */
     padding: 80px 20px;
     display: flex;
     justify-content: center;
